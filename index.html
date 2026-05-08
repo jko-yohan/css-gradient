@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator - Free Online Gradient Maker</title>
+    <meta name="description" content="Free online CSS gradient generator. Create beautiful linear and radial gradients with a visual editor and copy the CSS code.">
+    <meta name="keywords" content="css gradient generator, gradient maker, css gradient, linear gradient, radial gradient">
+    <link rel="canonical" href="https://jko-yohan.github.io/css-gradient/">
+    <meta property="og:title" content="CSS Gradient Generator - Free Online Gradient Maker">
+    <meta property="og:description" content="Create beautiful CSS gradients with a visual editor and copy the code.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jko-yohan.github.io/css-gradient/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4754582635962628" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>CSS Gradient Generator</h1>
+        <p class="subtitle">Create beautiful gradients and get the CSS code</p>
+    </header>
+    <main>
+        <div class="generator-layout">
+            <div id="preview" class="gradient-preview"></div>
+            <div class="controls-panel">
+                <div class="control-group">
+                    <label>Type</label>
+                    <div class="btn-group">
+                        <button class="btn btn-active" data-type="linear">Linear</button>
+                        <button class="btn" data-type="radial">Radial</button>
+                    </div>
+                </div>
+                <div class="control-group" id="direction-group">
+                    <label for="direction">Direction</label>
+                    <select id="direction">
+                        <option value="to right">To Right</option>
+                        <option value="to left">To Left</option>
+                        <option value="to bottom" selected>To Bottom</option>
+                        <option value="to top">To Top</option>
+                        <option value="to bottom right">To Bottom Right</option>
+                        <option value="to bottom left">To Bottom Left</option>
+                        <option value="to top right">To Top Right</option>
+                        <option value="to top left">To Top Left</option>
+                        <option value="45deg">45deg</option>
+                        <option value="90deg">90deg</option>
+                        <option value="135deg">135deg</option>
+                        <option value="180deg">180deg</option>
+                    </select>
+                </div>
+                <div id="color-stops">
+                    <div class="color-stop">
+                        <label>Color 1</label>
+                        <input type="color" class="stop-color" value="#667eea">
+                        <input type="number" class="stop-position" value="0" min="0" max="100">
+                        <span class="unit">%</span>
+                    </div>
+                    <div class="color-stop">
+                        <label>Color 2</label>
+                        <input type="color" class="stop-color" value="#764ba2">
+                        <input type="number" class="stop-position" value="100" min="0" max="100">
+                        <span class="unit">%</span>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <button id="btn-add-stop" class="btn">+ Add Color</button>
+                    <button id="btn-random" class="btn">Random</button>
+                </div>
+                <div class="code-output">
+                    <label>CSS Code</label>
+                    <textarea id="css-output" readonly spellcheck="false"></textarea>
+                    <button id="btn-copy" class="btn btn-primary">Copy CSS</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="info-section">
+            <h2>CSS Gradient Generator</h2>
+            <p>Create stunning CSS gradients with this free visual editor. Choose between linear and radial gradients, add multiple color stops, set directions, and copy the generated CSS code. Perfect for web designers and developers.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Linear and radial gradient support</li>
+                <li>Multiple color stops with position control</li>
+                <li>Direction and angle customization</li>
+                <li>Random gradient generation</li>
+                <li>One-click CSS code copying</li>
+            </ul>
+        </section>
+
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4754582635962628"
+                 data-ad-slot=""
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </main>
+    <footer>
+        <p>All processing runs locally in your browser. No data is sent to any server.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
